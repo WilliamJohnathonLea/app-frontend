@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
         <Header />
-        <main className="container mx-auto">
+        <main className="container mx-auto pt-6 border-t-2 border-blue-600">
           <Switch>
             <Route path="/profile">
               <Profile />

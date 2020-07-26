@@ -33,12 +33,12 @@ function Header() {
     }
 
     return (
-        <header className="bg-blue-900 text-white">
+        <header>
             <div className="container mx-auto">
                 <nav className="flex items-center justify-between flex-wrap py-4">
                     <div className="flex items-center flex-shrink-0 mr-6">
                         <span className="font-semibold text-2xl tracking-tight">
-                            Hello World
+                            Oxford-Analytica
                         </span>
                     </div>
                     <div className="flex flex-grow items-center">
@@ -53,7 +53,6 @@ function Header() {
                         </div>
                     </div>
                 </nav>
-                <div className="mb-6 border-b-4 border-blue-600"></div>
             </div>
         </header>
     );
