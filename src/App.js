@@ -6,25 +6,25 @@ import {
 } from 'react-router-dom';
 
 import Header from './common/Header';
-
-import './App.css';
+import Home from './home/Home';
+import Profile from './profile/Profile';
 
 function App() {
   return (
     <Router>
-      <div className="App container mx-auto">
         <Header />
-        <Switch>
-          <Route path="/profile">
-            <h1>Profile</h1>
-          </Route>
+        <main className="container mx-auto">
+          <Switch>
+            <Route path="/profile">
+              <Profile />
+            </Route>
 
-          {/* Home route must go last */}
-          <Route path="/">
-            <h1>Home</h1>
-          </Route>
-        </Switch>
-      </div>
+            {/* Home route must go last */}
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </main>
     </Router>
   );
 }
